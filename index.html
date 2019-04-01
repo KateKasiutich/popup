@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>popup</title>
+    <link href="assets/styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button class="popup-trigger btn" data-modal="popup-window">Click Me</button>
+
+    <div class="popup" id="popup-window">
+        <div class="popup-sandbox"></div>
+        <div class="popup-box">
+            <div id="close">
+                <img src="assets/icon-popup-close.svg" alt="">
+            </div> 
+            <div id="warning">
+                <img src="assets/icon-warning_notify-red.svg" />
+            </div>
+            <div class="main-text">
+                <h1>Are you sure you want to uninstall <br> the Shazam app</h1>
+            </div>
+            <div class="option-buttons">
+                <button id='cancel'>Cancel</button>
+                <button id='uninstall'>Uninstall</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Main BTN Section */
+.btn {
+    margin: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: none;
+    color: white;
+    background-color: #FF3C3C;
+    font-size: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #49B057;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+/*POPUP btns section*/
+#uninstall {
+    border: none;
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    background-color:  #FF3C3C;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0.3px #A52323;
+}
+
+#uninstall:hover {
+    background-color: #CE3030;
+}
+
+#uninstall:focus {
+    outline: 0;
+}
+
+#cancel {
+    border: 2px solid #C0C0C0;
+    height: 32px;
+    width: 200px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 15px;
+    color: #6B6D7F;
+    font-weight: bolder;
+    background-color:  white;
+    cursor: pointer;
+}
+
+#cancel:hover {
+    border: 2px solid #49B057;
+    background-color: #49B057;
+    color: white;
+}
+
+#cancel:focus {
+    outline: 0;
+}
+
+#close {
+    text-align: left;
+    cursor: pointer;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.option-buttons {
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*POPUP Main Text Section*/
+h1 {
+    color: #424242;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.main-text {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*POPUP Warning Icon Section*/
+#warning {
+    display: flex;
+    justify-content: space-around;
+}
+
+#warning img{
+    height: 100px;
+    width: 100px;
+}
+
+/*POPUP Position and Sizing Section*/
+.popup, .popup-box {
+  z-index: 900;
+}
+
+.popup-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.8);
+  overflow: auto;
+}
+
+.popup-box {
+  position: relative;
+  width: 550px;
+  max-width: 920px;
+  margin: 100px auto;
+  animation-name: popup-animation;
+  animation-duration: .3s;
+  animation-timing-function: cubic-bezier(0,0,.3,1.6);
+  background-color: white;
+  border-radius: 3px;
+}
+
+/*Animation Section*/
+@-webkit-keyframes popup-animation {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+@keyframes popup-animation {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
